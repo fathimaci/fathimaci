@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+}
+
+.sappy h1 {
+    margin: 0;
+}
+.hi {
+    float: right;
+}
+
+.hi a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.header {
+    text-align: center;
+    padding: 50px;
+    background-color: #e9ecef;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.tasks,
+.profile-info {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #007BFF;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007BFF;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.edit-profile {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.edit-profile:hover {
+    background-color: #0056b3;
+}

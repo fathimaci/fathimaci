@@ -1,0 +1,47 @@
+.reg{
+    width:100%;
+    height:100vh;
+    background-image:url(./assets/close-up-hand-holding-heaphones.jpg) ;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.from{
+    width:300px;
+    height: 450px;
+    background-color: rgba(3, 3, 3, 0.362);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    justify-content: flex-start;
+}
+.cls{
+    width:250px;
+    height:30px;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.in{
+    width:250px;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: 20px;
+    background-color:red;
+    border: none;
+}
+.cls2{
+    width:250px;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 5px;
+}
+.jo{
+    color:white;
+}

@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+}
+.fatma{
+    height: 100vh;
+    background-image: url(./assets/worker-protesting-working-rights.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* background-image: linear-gradient(black,url(./assets/worker-protesting-working-rights.jpg)); */
+}
+.para{
+    width: 90%;
+    height: 200px;
+    margin-left: 5%;
+    position:absolute;
+    top: 100px;
+    color: white;
+    /* border: 1px solid lightslategray; */
+    /* border-radius: 10px; */
+    background-color: rgba(0, 0, 0, 0.495);
+}
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+p{
+    font-size: 18px;
+    margin-left: 60px;
+    margin-right: 40px;
+}
+body{
+    margin:0;
+}
+nav{
+    background-color:white;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.sappy{
+    width: 80%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.hi{
+    width: 30%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hello{
+    font-size:20px;
+    text-decoration: none;
+    color: black;
+}
+.jo{
+    color: red;
+}
