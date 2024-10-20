@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Reviews Section */
+.reviews {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.reviews h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Review Card Styles */
+.review-card {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+    display: flex; /* Flexbox to align image and content */
+    align-items: center; /* Center items vertically */
+    border-radius: 5px;
+}
+
+.review-card img.movie-poster {
+    width: 100px; /* Set a fixed width for the poster */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.review-card h2 {
+    margin: 0;
+    color: #007bff; /* Color for movie title */
+}
+
+.review-card p {
+    margin: 5px 0; /* Spacing for paragraph */
+}
+
+.rating, .reviewer {
+    font-style: italic; /* Italic style for rating and reviewer */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
