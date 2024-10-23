@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
     <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="home.css">
 </head>
 <body>
 <nav>
-    <div class="sappy">
-      <h1>labour booking</h1>
-      <div class="hi">
-      <a href="login.php" class="hello">login</a>
-      <a href="register.php" class="hello">register</a>
-      <a href="" class="hello">feedback</a>
-      </div>
-    </div>
-  </nav>
+        <div class="sappy">
+            <h1>labour booking</h1>
+            <div class="hi">
+                <a href="home.php" class="hello">Home</a>
+                <a href="login.php" class="hello">Login</a>
+                <a href="register.php" class="hello">Register</a>
+                <a href="feedback.php" class="hello">Feedback</a>
+            </div>
+        </div>
+    </nav>
     <div class="content">
     <form action="" class="frm" method="post">
         <div class="imgcontainer">
@@ -42,8 +42,8 @@
     </div>
 </body>
 </html>
-
 <?php
+session_start();
 $con = mysqli_connect("localhost", "root", "", "labour_booking");
 if (!$con) {
     echo "DB not connected";
@@ -52,27 +52,38 @@ if (!$con) {
 if (isset($_POST['submit'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
-    
-    // Fetch the user details from the login table
+
     $sql = "SELECT * FROM `login` WHERE emailid='$username' AND password='$password'";
     $data = mysqli_query($con, $sql);
 
     if ($data) {
         if (mysqli_num_rows($data) > 0) {
             $user = mysqli_fetch_assoc($data);
-            $usertype = $user['usertype']; // Assuming 'usertype' is the column name
-
-            // Redirect based on user type using if statements
+            $usertype = $user['usertype'];
             if ($usertype == 0) {
-                header('Location: userhome.html'); // User Dashboard
+                $sqlUser = "SELECT usid FROM `users` WHERE email_id='$username'";
+                $userDetails = mysqli_query($con, $sqlUser);
+                if ($userDetails && mysqli_num_rows($userDetails) > 0) {
+                    $userInfo = mysqli_fetch_assoc($userDetails);
+                    $_SESSION['user_id'] = $userInfo['usid'];
+                    header('Location: userhome.php');
+                    exit();
+                }
             } elseif ($usertype == 1) {
-                header('Location: staffdash.php'); // Staff Dashboard
+                $sqlStaff = "SELECT id FROM `staff` WHERE emailid='$username'";
+                $staffDetails = mysqli_query($con, $sqlStaff);
+                if ($staffDetails && mysqli_num_rows($staffDetails) > 0) {
+                    $staffInfo = mysqli_fetch_assoc($staffDetails);
+                    $_SESSION['staff_id'] = $staffInfo['id'];
+                    header('Location: staffdash.php');
+                    exit();
+                }
             } elseif ($usertype == 2) {
-                header('Location: adminhome.html'); // Admin Dashboard
+                header('Location: adminhome.php');
+                exit();
             } else {
                 echo "<script>alert('Invalid user type')</script>";
             }
-            exit(); 
         } else {
             echo "<script>alert('User not found')</script>";
         }
@@ -83,4 +94,5 @@ if (isset($_POST['submit'])) {
     echo "Invalid form";
 }
 ?>
+
 

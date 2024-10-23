@@ -10,13 +10,16 @@
 <body>
 <nav>
     <div class="sappy">
-      <h1 class="in">ADMIN HOME </h1>
+      <h1>Admin Home</h1>
       <div class="hi">
-      <a href="adminhome.html" class="hello">home</a>
-      <a href="" class="hello">logout</a>
-          </div>
+        <a href="adminhome.php" class="hello">Dashboard</a>
+        <a href="managebooking.php" class="hello">Manage Booking</a>
+        <a href="managestaff.php" class="hello">Manage Staff</a>
+        <a href="manageuser.php" class="hello">Manage User</a>
+        <a href="logout.php" class="hello">Logout</a>
+      </div>
     </div>
-  </nav>    
+  </nav> 
   <div class="fathima"></div>
 <div class="design">
     <?php

@@ -8,6 +8,37 @@
     align-items: center;
     /* background-image: linear-gradient(rgb(119, 96, 166),black); */
 }
+nav {
+    background-color: white;
+    width: 100%;
+    height: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sappy {
+    width: 80%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hi {
+    width: 30%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hello {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
 .frm{
     width: 300px;
     height:400px;

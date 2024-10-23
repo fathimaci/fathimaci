@@ -1,63 +1,117 @@
-*{
+/* Reset */
+* {
     margin: 0;
 }
-.fatma{
-    height: 100vh;
-    background-image: url(./assets/worker-protesting-working-rights.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    /* background-image: linear-gradient(black,url(./assets/worker-protesting-working-rights.jpg)); */
+
+/* Body */
+body {
+    margin: 0;
 }
-.para{
-    width: 90%;
-    height: 200px;
-    margin-left: 5%;
-    position:absolute;
-    top: 100px;
-    color: white;
-    /* border: 1px solid lightslategray; */
-    /* border-radius: 10px; */
-    background-color: rgba(0, 0, 0, 0.495);
-}
-h1{
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 20px;
-}
-p{
-    font-size: 18px;
-    margin-left: 60px;
-    margin-right: 40px;
-}
-body{
-    margin:0;
-}
-nav{
-    background-color:white;
+
+/* Navigation */
+nav {
+    background-color: white;
     width: 100%;
-    height: 80px;
+    height: 15px;
+    padding: 15px;
     display: flex;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
 }
-.sappy{
+
+.sappy {
     width: 80%;
     height: 80px;
     display: flex;
     justify-content: space-between;
 }
-.hi{
+
+.hi {
     width: 30%;
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.hello{
-    font-size:20px;
+
+.hello {
+    font-size: 20px;
     text-decoration: none;
     color: black;
 }
-.jo{
+
+.jo {
     color: red;
 }
+
+/* Full-Screen Section */
+.fatma {
+    height: 600px;
+    background-image: url(./assets/worker-protesting-working-rights.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Overlay Paragraph */
+.para {
+    width: 90%;
+    height: 200px;
+    margin-left: 5%;
+    position: absolute;
+    top: 100px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.495);
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 18px;
+    margin-left: 60px;
+    margin-right: 40px;
+}
+
+/* Slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: 680px;
+}
+
+/* Sections */
+#slideshow,
+#services,
+#about,
+#contact,
+#login {
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Header Overlay on Slideshow */
+.fath {
+    position: absolute; /* Position header on top of the slideshow */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2; /* Ensure it's above the slideshow */
+}
+
+

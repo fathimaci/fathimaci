@@ -4,26 +4,44 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
-
 nav {
-    background-color: #007BFF;
-    color: white;
-    padding: 15px;
+    background-color: #007BFF; /* A vibrant blue for the background */
+    color: white; /* White text color */
+    padding: 15px 0;  
 }
 
-.sappy h1 {
-    margin: 0;
+.sappy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .hi {
-    float: right;
+    display: flex;
+    align-items: center;
+    width: 60%;
 }
 
 .hi a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
+    color: white; /* White text color for links */
+    text-decoration: none; /* No underline */
+    margin-left: 20px; /* Space between links */
+    padding: 8px 15px; /* Padding around links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
+
+.hi a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lighten on hover */
+}
+
+.hi a.active {
+    background-color: rgba(255, 255, 255, 0.4); /* Active link background */
+}
+
 
 .header {
     text-align: center;
