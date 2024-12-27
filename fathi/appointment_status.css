@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: rgb(32, 32, 44);
+    color: #fff;
+    padding: 15px 0;
+}
+
+.sappy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hi a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.hi a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+.main-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    /* color: #007BFF; */
+    color: rgba(255, 68, 0, 0.8);
+}
+h1{
+    color: yellow;
+}
+
+.appointments-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.appointments-list li {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;  /* Increased padding for more space */
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    min-height: 120px; /* Ensures a minimum height */
+
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(32, 32, 44);
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

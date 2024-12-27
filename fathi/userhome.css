@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+nav {
+    background-color: rgb(32, 32, 44); /* A vibrant blue for the background */
+    color: white; /* White text color */
+    padding: 15px 0;  
+}
+
+.sappy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hi {
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.hi a {
+    color: white; /* White text color for links */
+    text-decoration: none; /* No underline */
+    margin-left: 20px; /* Space between links */
+    padding: 8px 15px; /* Padding around links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.hi a:hover {
+    background-color:yellow; /* Lighten on hover */
+    color: black;
+}
+
+.hi a.active {
+    background-color: rgba(255, 255, 255, 0.4); /* Active link background */
+}
+
+
+.header {
+    text-align: center;
+    padding: 50px;
+    background-color: #e9ecef;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.services,
+.user-info {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    /* color: #007BFF; */
+    color: rgba(255, 68, 0, 0.759);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(32, 32, 44);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.edit-profile {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.edit-profile:hover {
+    background-color: orangered;
+}
+h1{
+    color: yellow;
+    margin-left: 5%;
+}

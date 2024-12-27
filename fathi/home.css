@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    height: 95vh; /*Full height for background slideshow */
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none; /* Hide all slides by default */
+}
+
+.mySlides img {
+    width: 100%;
+    height: 95%;
+    object-fit: cover; /* Cover the entire container */
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgb(32, 32, 44);
+    overflow: hidden;
+    /* height: 60px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin:0;
+    /* padding-left:1050px; */
+
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    /* color: white; */
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    /* background-color: #575757; */
+    background-color: yellow;
+    color: #333;
+}
+
+header {
+    position: absolute; /* Position header on top of the slideshow */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* color:#506351; */
+    text-align: center;
+    z-index: 2; /* Ensure it's above the slideshow */
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+header p {
+    font-size: 1.2em;
+    /* color:#b1bab2; */
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: yellow;
+    color: white;
+    /* background: white; */
+    /* color: #4CAF50; */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background: #e0e0e0;
+}
+
+.features {
+    padding: 20px;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 20px;
+}
+
+.feature {
+    margin: 20px 0;
+}
+
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 300px;
+    margin: 20px auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    /* background: #333; */
+    /* background:#506351; */
+    background: rgb(32, 32, 44);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.navbar h2{
+    line-height: 0;
+    color: white;
+    /* margin-top: 20px; */
+    margin: 0;
+    /* padding-top: 25px; */
+}
